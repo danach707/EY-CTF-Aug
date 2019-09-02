@@ -18,6 +18,11 @@ app.get('/', (req, res, next) => {
     res.render('home')
 });
 
+// app.get('/', (req, res, next) => {
+//     res.render('http://52.59.190.126/codeChallange.php')
+//     res.render('CTF_AUGUST{"GitLeakForever<3"}')    
+// });
+
 app.get('/admin', (req, res, next) => {
 
 });
@@ -25,4 +30,3 @@ app.get('/admin', (req, res, next) => {
 app.listen(8082);
 console.log('app is listening on port 8082');
 
-// 254.254.254.254
