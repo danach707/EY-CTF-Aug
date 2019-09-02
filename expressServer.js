@@ -23,8 +23,12 @@ app.get('/', (req, res, next) => {
 //     res.render('CTF_AUGUST{"GitLeakForever<3"}')    
 // });
 
-app.get('/admin', (req, res, next) => {
+app.get('/flag.html', (req, res, next) => {
+    res.sendFile('flag.html')
+});
 
+app.post('/flag', (req, res, next) => {
+    res.render('flag')
 });
 
 app.listen(8082);
